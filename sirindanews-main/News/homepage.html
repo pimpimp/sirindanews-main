@@ -1,0 +1,178 @@
+
+
+<!-- อ่านทีบอกและทำตามทุกอย่างไม่งั้นพัง -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SirindaNews</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kanit&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Itim', cursive;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .card{
+            max-width: 800px;
+            min-width: 200px;
+            height: auto;      
+        }
+
+        @media (max-width: 430px) {
+            .card h3 , .card h6 {
+                font-size: x-small;
+            }
+        }
+        @media (max-width: 699px) {
+            .nav-link{
+                font-size:13px;
+            }
+        }
+        @media (max-width: 619px) {
+            .nav-link{
+                font-size:10px;
+            }
+        }
+        
+
+    </style>
+</head>
+
+<body class="bg-dark">
+    <div class="container-fluid pb-1 pt-2 text-center bg-dark text-light">
+        <a href="#" class="text-decoration-none fs-2 text-white">SIRINDA NEWS</a>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-light bg-warning sticky-top">
+        <div class="container-fluid" id="navToggle">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navToggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navToggle">
+                <div class="container-fluid d-flex justify-content-sm-evenly">
+                    <ul class="navbar-nav ps-4">
+                        <li class="nav-item pe-4"><a href="#bunterngnews" class="nav-link">ข่าวบันเทิง</a></li>
+                        <li class="nav-item pe-4"><a href="#politicnews" class="nav-link">ข่าวการเมือง</a></li>
+                        <li class="nav-item pe-4"><a href="#crimenews" class="nav-link">ข่าวอาชญากรรม</a></li>
+                        <li class="nav-item pe-4"><a href="#sportnews" class="nav-link">ข่าวกีฬา</a></li>
+                        <li class="nav-item pe-4"><a href="#talkoftownnews" class="nav-link">ข่าวทอล์คออฟทาว</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="p-5 bg-white row justify-content-evenly " style="margin: 0 30px 0 30px;">
+        <hr>
+        
+        <div class="card mx-auto" id="bunterngnews">
+            <img src="assests/images/entertainnews/news1.jpg">
+            <div class="card-body">
+                <h3 class="card-title">คดี Forex สะเทือนวงการบันเทิง!!!</h3>
+                <h6 class="card-subtitle text-muted pb-2">เผยแพร่ 32 / มกรายน / 3023</h6>
+                
+                <div class="pt-2 pb-1">
+                    <h6 class="card-text">สะเทือนทั้งวงการ! ดาราหลายคนมีชื่อถูกโยงกับคดี Forex-3D
+                        คดีแชร์ลูกโซ่มูลค่าความเสียหายกว่า 2,500 ล้าน!!!
+                    </h6>
+                </div>
+                <button class="btn btn-danger btn-m">
+                    <a href="entertainpage.html" class="text-decoration-none text-white">อ่านข่าวเลย</a>   <!-- ตรงนี้ให้แก้ href เป็นหน้าข่าวที่อยากให้เข้าไป อย่างอันนีเป็นข่าวบันเทิงก็เชื่มไปยัง htmlอีกอันที่ทำของขบันเทิง -->
+                </button>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="card mx-auto" id="politicnews">
+            <img src="assests/images/politicnews/news2.jpg">
+            <div class="card-body">
+                <h3 class="card-title">ผลเลือกตั้งผู้ว่าฯ กทม. กวาดแต้มถล่มทลาย 1,386,215 คะแนน สูงสุดเป็นประวัติศาสตร์</h3>
+                <h6 class="card-subtitle text-muted pb-2">เผยแพร่ 32 / มกรายน / 3023</h6>
+        
+                <div class="pt-2 pb-1">
+                    <h6 class="card-text">นำโด่งม้วนเดียวจบ ตามโพลทุกสำนัก มีคะแนนพุ่งลิ่ว สมราคาเต็งหนึ่ง ตั้งแต่ประกาศตัวลงสมัคร
+                    </h6>
+                </div>
+                <button class="btn btn-danger btn-m">
+                    <a href="politicpage.html" class="text-decoration-none text-white">อ่านข่าวเลย</a> <!-- ตรงนี้ให้แก้ href เป็นหน้าข่าวที่อยากให้เข้าไป อย่างอันนีเป็นข่าวการเมืองก็เชื่มไปยัง htmlอีกอันที่ทำของการเมือง -->
+                </button>
+            </div>
+        </div>
+
+        <hr class="my-5">
+        
+        <div class="card mx-auto" id="crimenews">
+            <img src="assests/images/crimenews/news3.jpg">
+            <div class="card-body">
+                <h3 class="card-title">สังหารหมู่เด็กเล็กหนองบัวลำภู โศกนาฏกรรมครั้งประวัติศาสตร์ของประเทศ</h3>
+                <h6 class="card-subtitle text-muted pb-2">เผยแพร่ 32 / มกรายน / 3023</h6>
+        
+                <div class="pt-2 pb-1">
+                    <h6 class="card-text">โศกนาฏกรรมสะเทือนขวัญครั้งเลวร้ายที่สุดในประวัติศาสตร์ไทย
+                    เป็นภาพเหตุการณ์เศร้าสะเทือนใจที่ทุกคนยากจะลืมเลือนกับการสังหารหมู่ที่ศูนย์พัฒนาเด็กเล็ก ต.อุทัยสวรรค์ อ.นากลาง
+                    จ.หนองบัวลำภู เมื่อวันที่ 6 ต.ค.2565 ที่เป็นข่าวดังไปทั่วโลก มีผู้เสียชีวิต 37 คน ในจำนวนนี้เป็นเด็ก 24 คน
+                    </h6>
+                </div>
+                <button class="btn btn-danger btn-m">
+                    <a href="crimepage.html" class="text-decoration-none text-white">อ่านข่าวเลย</a> <!-- ตรงนี้ให้แก้ href เป็นหน้าข่าวที่อยากให้เข้าไป อย่างอันนีเป็นข่าวอาดชะยากรรมมก็เชื่อมไปยัง htmlอีกอันที่ทำของอาดยากรรม -->
+                </button>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="card mx-auto" id="sportnews">
+            <img src="assests/images/sportnews/news4.jpg">
+            <div class="card-body">
+                <h3 class="card-title">36 ปีที่รอคอย! ทัพฟ้าขาว อาร์เจนตินา ผงาดคว้าแชมป์โลกเป็นสมัยที่ 3 ได้อย่างยิ่งใหญ่</h3>
+                <h6 class="card-subtitle text-muted pb-2">เผยแพร่ 32 / มกรายน / 3023</h6>
+        
+                <div class="pt-2 pb-1">
+                    <h6 class="card-text">ลิโอเนล เมสซี โพสต์ร่ายยาวกลั่นออกมาจากใจ หลังพาอาร์เจนตินาเป็นแชมป์ฟุตบอลโลก 2022
+                    ระบุสิ่งที่ทำให้ทัพฟ้าขาวเป็นผู้ชนะของโลก
+                    </h6>
+                </div>
+                <button class="btn btn-danger btn-m">
+                    <a href="sportpage.html" class="text-decoration-none text-white">อ่านข่าวเลย</a> <!-- ตรงนี้ให้แก้ href เป็นหน้าข่าวที่อยากให้เข้าไป อย่างอันนีเป็นข่าวกีลาก็เชื่มไปยัง htmlอีกอันที่ทำของกีลา -->
+                </button>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="card mx-auto" id="talkoftownnews">
+            <img src="assests/images/talkoftownnews/news5.jpg">
+            <div class="card-body">
+                <h3 class="card-title">ปริศนาการตายของ “ดาราสาวแตงโม” จุดชนวน “มโน” ว่อนโลกโซเชียล</h3>
+                <h6 class="card-subtitle text-muted pb-2">เผยแพร่ 32 / มกรายน / 3023</h6>
+        
+                <div class="pt-3 pb-2">
+                    <h6 class="card-text">ตกเป็นประเด็นทอล์กออฟเดอะทาวน์นานนับเดือนถึงปริศนาการเสียชีวิตของดาราสาวชื่อดัง แตงโม-นิดา หรือ ภัทรธิดา พัชรวีระพงษ์
+                    พลัดตกกลางแม่น้ำเจ้าพระยา ระหว่างนั่งสปีดโบ๊ต จิบไวน์กับเพื่อนเมื่อคืนวันที่ 24 ก.พ.2565 บริเวณใกล้ท่าเรือพิบูลสงคราม
+                    อ.เมืองนนทบุรี
+
+                    </h6>
+                </div>
+                <button class="btn btn-danger btn-m">
+                    <a href="talkoftownpage.html" class="text-decoration-none text-white">อ่านข่าวเลย</a> <!-- ตรงนี้ให้แก้ href เป็นหน้าข่าวที่อยากให้เข้าไป อย่างอันนีเป็ทอคทาวก็เชื่มไปยัง htmlอีกอันที่ทำของทอคทาว -->
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!--********พอแก้ลิงค์แล้วก็ไปแก้พวกเนื้อหาและภาพของหน้าข่าวแต่ละข่าว***************-->
+<!--สู้ๆ ไปนอนละ บาย-->
